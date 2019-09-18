@@ -162,6 +162,10 @@ a.bubbly-button:hover { /* приступы с кнопкой */
     color: #ff1074;
     font-weight: 700;
 }
+.card__text--style-green {
+    color: #19ac06;
+    font-weight: 700;
+}
 .direction-card a {
     text-align: center;
 }

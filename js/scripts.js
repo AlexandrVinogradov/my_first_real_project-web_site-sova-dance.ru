@@ -73,8 +73,8 @@ $(document).ready(function(){
 	});
 //slide
 	$('.slide').slick({
-		autoplay: true,
-		autoplaySpeed: 6000,
+		// autoplay: true,
+		// autoplaySpeed: 6000,
 	});
 //map
 	ymaps.ready(init);

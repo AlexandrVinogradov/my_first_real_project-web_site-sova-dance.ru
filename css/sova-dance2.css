@@ -251,6 +251,8 @@ a.bubbly-button:hover {
 }
 .trainers-link {
     color: white;
+    /* user-select: none; */
+    outline: none;
 }
 .trainers-link:hover {
     color: #F0C0A8;

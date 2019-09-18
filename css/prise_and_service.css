@@ -125,10 +125,10 @@ a.bubbly-button:hover { /* приступы с кнопкой */
     text-align: center;
 }
 .service-card--btn {
+    cursor: pointer;
     border: solid 1px #423d3d;
     padding: 10px;
     color: #423d3d;
-    cursor: pointer;
 }
 .service-card--btn:hover {
     border: solid 1px #5f5f5f;
