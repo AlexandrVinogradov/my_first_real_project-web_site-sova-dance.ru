@@ -418,6 +418,10 @@ a.bubbly-button:hover { /* приступы с кнопкой */
     padding: 10px;
     cursor: pointer;
 }
+/* box-modal */
+.img--group {
+    max-width: 500px;
+}
 /* animation */
 .wow {
     visibility: hidden;
