@@ -143,6 +143,7 @@ a.bubbly-button:hover {
 }
 .aboutUs__second-block img {
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    height: 350px;
 }
 .aboutUs__second-block_content {
     text-align: right;
@@ -246,13 +247,14 @@ a.bubbly-button:hover {
     height: 300px;
 }
 .cards-pageTwo {
-    padding-right: 40px;
-    padding-left: 40px;
+    /* padding-right: 40px;
+    padding-left: 40px; */
 }
 .trainers-link {
     color: white;
     /* user-select: none; */
     outline: none;
+    cursor: pointer;
 }
 .trainers-link:hover {
     color: #F0C0A8;

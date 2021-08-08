@@ -89,7 +89,7 @@ $(document).ready(function(){
 			// Порядок по умолчанию: «широта, долгота».
 			// Чтобы не определять координаты центра карты вручную,
 			// воспользуйтесь инструментом Определение координат.
-			center: [55.84169089670285,37.44329943981163],
+			center: [55.84648356, 37.44183196],
 			// Уровень масштабирования. Допустимые значения:
 			// от 0 (весь мир) до 19.
 			zoom: 16
@@ -115,7 +115,7 @@ $(document).ready(function(){
         MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
 		),
 		
-		myPlacemark1 = new ymaps.Placemark([55.84169089670285,37.44329943981163], {
+		myPlacemark1 = new ymaps.Placemark([55.84410083, 37.44244562], {
 			balloonContentHeader: '<img src="./img/iconSova.png" alt="Sticky Nav Bar Logo" class="mapLogo"><span class="mapTitle">&nbspSova-dance</span>',
 			balloonContentBody: 'Ждем вас!)',
 			balloonContentFooter: '#',
@@ -128,9 +128,9 @@ $(document).ready(function(){
 			iconContentLayout: MyIconContentLayout
 
 		}),
-		myPlacemark2 = new ymaps.Placemark([55.84212327757905,37.438814739097836], {
+		myPlacemark2 = new ymaps.Placemark([55.84646213, 37.43952472], {
 			balloonContentHeader: '<img src="./img/iconBus.png" alt="Sticky Nav Bar Logo" class="mapLogo"><span class="mapTitle">Трамвай №6</span>',
-			balloonContentBody: '"Улица Фабрициуса"',
+			balloonContentBody: '"Нелидовская улица"',
 			balloonContentFooter: 'Трамвайная остановка',
 			hintContent: 'Трамвай №6'
 		}, {
