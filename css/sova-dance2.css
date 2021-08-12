@@ -17,6 +17,7 @@ ul, li, p {
 }
 a {
     text-decoration: none;
+    color: inherit;
 }
 .d-flex {
     display: -webkit-flex;
@@ -64,7 +65,7 @@ a {
 li.nav a {
     color: #000;
     font-weight: 600;
-    /* font-size: 17px; */
+    transition: 0.3s ease;
 }
 .nav__prise {
     word-spacing: -2px;
@@ -255,9 +256,10 @@ a.bubbly-button:hover {
     /* user-select: none; */
     outline: none;
     cursor: pointer;
+    transition: 0.3s ease;
 }
 .trainers-link:hover {
-    color: #F0C0A8;
+    color: #ff0081;
 }
 /* trainers-card */
 .trainer-card {
@@ -1096,9 +1098,9 @@ _:-ms-fullscreen, :root .wcm_button_ic {
         justify-content: space-evenly;
     }
     .contact-btn {
-        width: 120px;
+        /* width: 120px; */
         font-size: 14px;
-        padding: 10px;
+        /* padding: 10px; */
     }
     .contacts-inf__link {
         width: auto;

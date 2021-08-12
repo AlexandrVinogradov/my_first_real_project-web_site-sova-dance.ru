@@ -71,9 +71,9 @@ li.nav {
 	}
 
 	li.nav a:hover {
-		color: #F0C0A8!important;
+		color: #ff0081!important;
 	}
 
 .navScroll a.selected {
-	color: #F0C0A8!important;
+	color: #ff0081!important;
 }
