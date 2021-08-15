@@ -496,6 +496,9 @@ _:-ms-fullscreen, :root .flex-wrap  {
     .direction-page__content-title h3 {
         font-size: 14px;
     }
+    .direction-page p {
+        padding-left: 0px;
+    }
     .direction-page__content-title p {
         font-size: 14px;
     }
