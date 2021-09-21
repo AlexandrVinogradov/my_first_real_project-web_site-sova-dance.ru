@@ -1,0 +1,48 @@
+extends ../layout/main
+
+block variables
+  - var title = "Chukotka";
+  - var description = "Description for Chukotka";
+  - var pageClass = "questions-page";
+
+  - var media = ['10', '11', '12', '13', '05', '06', '07', '08']
+  - 
+    var desc = [
+      'Каким устройством вы чаще всего пользуетесь для просмотра новостей на сайте?',
+      'Какой он, житель Дальнего Востока?',
+      'В каком из мест на Чукотке вы хотели бы побывать?',
+      'Эскимосы: дружба через океан',
+      '«Вагыргын»: побег с «материка»',
+      'Неизвестный из Уэлена',
+      'Как чукча немца учил: зачем ученый из Германии объехал русскую Арктику',
+      'Жизнь русских матрешек в условиях Крайнего Севера',
+      'Воздушный путь через лиман'
+    ]
+
+
+block content
+      include ../includes/modules/modal-question-answer.pug
+      include ../includes/modules/modal-question-result.pug
+
+      main
+        .title-container
+          h1 Статьи 
+          //- +sub-nav()
+        .container-without-padding
+          section.questions-page__content 
+
+            .content__first-item 
+              +mediaItem('09', desc[0])(class="media-first-item open-question-modal")
+            .content__additional-items 
+              each val, id in media 
+                +mediaItem(val, desc[id + 1])
+
+        .container-without-padding
+          +showMore()
+          +pagination()
+
+
+
+
+
+

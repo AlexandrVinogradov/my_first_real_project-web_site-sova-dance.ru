@@ -1,0 +1,20 @@
+.modal-question-answer.hidden
+  .modal-question-answer__wrapper 
+    .modal-question-answer__content 
+      
+      button.close-modal-question-answer.close-modal
+        svg(width="32" height="32")
+          use(xlink:href="assets/img/icon-close.svg#icon-close")
+      
+      .modal-question-answer__content_wrapper
+        .modal-question-answer__header
+          img(src="assets/img/modal-background.png", alt="modal-background")
+          h2.header__title Каким устройством вы чаще всего пользуетесь для просмотра новостей на сайте?
+        .modal-question-answer__body
+          ul 
+            - var inputs = ['Белый медведь', 'Морж', 'Северный олень', 'Кит', 'Бурый медведь']
+            each val in inputs
+              li 
+                input(type="checkbox" name="option1" value="a1") 
+                p= val
+          +elipseButton('Проголосовать')(class="send-vote")

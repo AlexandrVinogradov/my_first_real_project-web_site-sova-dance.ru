@@ -1,0 +1,26 @@
+.search-item-article {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: flex-start;
+  padding-bottom: 40px;
+
+  .search-item__title {
+    font-size: 20px;
+    line-height: 140%;
+    padding-bottom: 7px;
+  }
+  .search-item_desc {
+    font-size: 16px;
+    line-height: 140%;
+    color: #666666;
+    padding-bottom: 12px;
+  }
+  .interactive {
+    color: #3d4c99;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+  }
+}

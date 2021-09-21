@@ -1,0 +1,84 @@
+extends ../layout/main
+
+block variables
+  - var title = "Chukotka";
+  - var description = "Description for Chukotka";
+  - var pageClass = "offer-news-page";
+
+block content
+  //- +defaultPopup('Спасибо!', 'Новость была успешно отправлена на рассмотрение редакции', 'продолжить чтение')(class='close-default-popup')
+  include ../includes/modules/offer-news-success
+
+  main 
+    .title-container
+      h1 Предложить новость
+    .container
+      form.offer-news__title-of-news
+        .name-of-general-field
+          p.offer-news__title-of-section Заголовок новости #[span *]
+          p.must-fill * — поле обязательное для заполнения
+        input.input__title-of-news(type="text" placeholder="Введите заголовок новости...") 
+
+
+      form.offer-news__text 
+        p.offer-news__title-of-section Заголовок новости #[span *]
+        <textarea class="offer-news__text_textarea" type="text" placeholder="Введите текст новости..."></textarea>
+
+      form.offer-news__photos
+        p.offer-news__title-of-section Фотографии
+        p.offer-news_format Формат файла jpg, jpeg, png, gif.
+        p.offer-news_format Максимальный размер файла не более 10 Mb
+
+        ul.offer-news__photos_list  
+          -var photos = ['photo-01', 'photo-02', 'photo-03', 'load-photo']
+          each val, id in photos 
+
+            if id !== photos.length - 1
+              li 
+                img(src=`assets/img/offer-news/${val}.png` alt="photo")
+                button.delete-photo
+                  svg(width="20" height="20")
+                    use(xlink:href="assets/img/icon-close-with-back.svg#icon-close-with-back")
+            else 
+              li(class="123")
+                button.add-photo
+                  img(src='assets/img/offer-news/load-photo.png' alt="load-photo")
+
+      form.offer-news__video
+        p.offer-news__title-of-section Видео
+        p.offer-news_format Формат файла WebM, MPEG4, 3GPP, MOV, AVI, MPEGPS, WMV, FLV
+        p.offer-news_format Максимальный размер файла не более 200 Mb
+
+        button 
+          img(src=`assets/img/offer-news/load-video.png` alt="load-video")
+
+        p.offer-news__title-of-section Ссылка на видео
+        p.offer-news_format Если вы не можете загрузить видео, но оно размещено на ваших аккаунтах в социальных сетях, либо в 
+        p.offer-news_format облачных хранилищах или на видеохостингах, то просто вставьте ссылку на ролик
+
+        input.input__link-on-video(type="text" placeholder="http://") 
+
+      section.offer-news__user-data
+        p.offer-news__title-of-section Ваши имя и фамилия
+        p.offer-news_format Для указания авторства
+        input.input__name(type="text" placeholder="ФИО...")
+
+        .data__phone-mail
+          .data_phone
+            p.offer-news__title-of-section Ваш телефон
+            p.offer-news_format Не публикуется на сайте, нужен для уточнения #[br] деталей
+            input.input__phone(type="text" placeholder="+7 (___) ___-__-__")
+          .data_phone
+            p.offer-news__title-of-section Ваш E-mail
+            p.offer-news_format Не публикуется на сайте, нужен для уточнения #[br] деталей
+            input.input__mail(type="text")
+
+        
+        .check-box-with-title
+          input(type="checkbox") 
+          p С #[a(href="#") правилами размещения материалов] согласен(-а)
+        .check-box-with-title
+          input(type="checkbox") 
+          p Согласен(-а) на #[a(href="#") обработку персональных данных] 
+          
+        +elipseButton('Отправить')(class="open-default-popup_news-was-offered")

@@ -1,0 +1,171 @@
+mixin media() 
+  .media-list
+    .media-list__views
+      a(href='#') 
+        svg(width="24" height="20")
+          use(xlink:href=`assets/img/heart.svg#heart`)
+        span 286
+      a(href='#') 
+        svg(width="25" height="25")
+          use(xlink:href=`assets/img/eyes.svg#eyes`)
+        span 2 648
+
+    +mediaLinks()
+
+    .media-list__print
+      a(href='#')
+        svg(width="24" height="24")
+          use(xlink:href=`assets/img/print.svg#print`)
+
+
+mixin mediaLinks()
+  ul.media-list__social
+    li
+      a(href='#')
+        svg(width="7" height="16")
+          use(xlink:href=`assets/img/fb2.svg#fb2`)
+    li
+      a(href='#')
+        svg(width="18" height="10")
+          use(xlink:href=`assets/img/vk2.svg#vk2`)
+    li
+      a(href='#')
+        svg(width="9" height="16")
+          use(xlink:href=`assets/img/ok2.svg#ok2`)
+    li
+      a(href='#')
+        svg(width="16" height="13")
+          use(xlink:href=`assets/img/twitter.svg#twitter`)
+    li
+      a(href='#')
+        svg(width="16" height="14")
+          use(xlink:href=`assets/img/telega.svg#telega`)
+
+mixin linkMarkIcon() 
+  svg(width="15" height="15")
+    use(xlink:href="assets/img/useful-link.svg#useful-link")
+
+
+//- SEARCH ITEM
+mixin searchItem(title, desc, article)
+  article.search-item-article 
+    h3.search-item__title=title  
+
+    if desc
+      p.search-item_desc=desc
+
+    if article
+      a(href="#").interactive Статьи
+    else  
+      a(href="#").interactive Опросы
+
+//- SHOW MORE
+mixin showMore()
+  .show-more Показать еще
+
+//- PAGINATION 
+mixin pagination()
+  <div class="news-content__list">
+    <ul>
+      <li><a href="#"><svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M7 1L1 7L7 13" stroke="#DFDFE6" stroke-width="2" stroke-linejoin="round"/>
+        </svg></a></li>
+      <li class='active'><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">...</a></li>
+      <li><a href="#">25</a></li>
+      <li><a href="#"><svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1 1L7 7L1 13" stroke="#DFDFE6" stroke-width="2" stroke-linejoin="round"/>
+      </svg></a></li>
+    </ul>
+  </div>
+
+
+//- SUB-NAV
+mixin sub-nav()
+  <ul class="sub-nav">
+    <li class="active" data-value='all'><a href="#" >Все новости</a></li>
+    <li data-value='off'><a href="#" >Официально</a></li>
+    <li data-value='eco'><a href="#" >Экономика</a></li>
+    <li data-value='soc'><a href="#" >Общество</a></li>
+    <li data-value='pr'><a href="#" >Происшествия</a></li>
+    <li data-value='tur'><a href="#" >Туризм</a></li>
+    <li data-value='cul'><a href="#" >Культура</a></li>
+  </ul>
+
+
+//- MEDIA-ITEM
+mixin mediaItem(img, desc, video)
+  article(class!=attributes.class).media-item
+
+    .media-item__preview
+      img(src=`assets/img/media/media-${img}.png`)
+      if video 
+        svg(width="67" height="74").media-item__icon-play
+          use(xlink:href="assets/img/icon-play.svg#icon-play")
+
+    .media-item__info
+      p.media-item__data 30.04.2020
+      p.media-item__desc= desc
+
+
+//- DIRECTION DROPDOWN
+mixin directionDropdown()
+  .direction-dropdown__wrapper
+    button.direction-dropdown Анадырь
+      svg(width="20" height="13").icon-arrow-down
+        use(xlink:href="assets/img/icon-arrow-down.svg#icon-arrow-down").icon-arrow-down__path
+
+    ul.direction-dropdown__list
+      li.direction-dropdown__item #[a(href="#") #[.marker-yellow] #[p Билибино]]
+      li.direction-dropdown__item #[a(href="#") #[.marker-vanilla] #[p Певек]]
+      li.direction-dropdown__item #[a(href="#") #[.marker-pink] #[p Лаврентия]]
+      li.direction-dropdown__item #[a(href="#") #[.marker-gold] #[p Провидения]]
+      li.direction-dropdown__item #[a(href="#") #[.marker-yellow] #[p Эгвекинот]]
+
+//- ELIPSE BUTTON
+mixin elipseButton(push)
+  button(class!=attributes.class).elipse-button 
+    a(href="#")= push 
+
+//- RESULT BAR
+mixin resultBar(title, percent, countOfVote)
+  .result-bar
+    p.result-bar__title= title 
+    .bar-and-percent 
+      .bar
+        .progress-bar(style=`width: ${percent}`) 
+      p.percent= percent
+
+    p.count-of-vote= countOfVote
+
+//- BANNERS
+mixin advertising(banners)
+  .advertising 
+    each val in banners
+      img(src=`assets/img/${val}.jpg`)
+
+
+//- DEFAULT POPUP
+mixin defaultPopup(title, desc, button, buttonClass, textarea)
+  .default-popup.hidden(class!=attributes.class)
+    .default-popup__wrapper
+      .default-popup__content 
+        
+        button.close-default-popup.close-default-popup-icon.close-default-popup
+          svg(width="32" height="32")
+            use(xlink:href="assets/img/icon-close.svg#icon-close")
+        
+        .default-popup__content_wrapper
+          h3= title
+          P= desc
+          if textarea
+            <textarea class="" type="text" placeholder="Комментарий для автора (необязательно)"></textarea>
+
+          +elipseButton(button)(class=buttonClass)
+
+//- FB PLUGIN
+mixin fbPlugin() 
+  //- #fb-root
+  .fb-comments(data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-numposts="1" data-width="100%")

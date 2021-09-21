@@ -1,0 +1,25 @@
+.videos-page {
+  .title-container {
+    & > h1 {
+      color: #000000;
+      padding-bottom: 20px;
+    }
+  }
+  .container-without-padding {
+    .videos-page__content {
+      .content__first-item {
+        .media-item {
+          // height: 600px;
+        }
+      }
+      .content__additional-items {
+        display: flex;
+        flex-wrap: wrap;
+
+        .media-item { 
+          width: calc(100% / 2 );
+        }
+      }
+    }
+  }
+}

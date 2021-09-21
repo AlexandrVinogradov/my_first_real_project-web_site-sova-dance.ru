@@ -1,0 +1,179 @@
+@import "utils/libs";
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/fonts";
+@import "utils/reset";
+
+@import "style.scss";
+
+html {
+  line-height: $mainLineHeight;
+  font-size: $mainFontSize;
+  color: $mainFontColor;
+  height: 100%;
+  @media screen and (max-width: $desktopWidth) {
+    font-size: 16px;
+  }
+  @media screen and (max-width: $tableWidth) {
+    font-size: 15px;
+  }
+  @media screen and (max-width: $phoneWidth) {
+    font-size: 14px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $mainFont;
+  font-size: $mainFontSize;
+  font-weight: $mainFontWeight;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 100%;
+  color: #293d66;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+section,
+.section {
+  position: relative;
+  // padding: 40px 0;
+  // @media screen and (max-width: $smDesktopWidth) {
+  //   padding: 36px 0;
+  // }
+  // @media screen and (max-width: $tableWidth) {
+  //   padding: 28px 0;
+  // }
+  // @media screen and (max-width: $phoneWidth) {
+  //   padding: 20px 0;
+  // }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  min-height: 100vh;
+  // min-width: 100vh;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  // min-height: 100vh;
+}
+.hidden {
+  display: none;
+}
+
+.container {
+  width: 100%;
+  flex: 0 0 auto;
+  position: relative;
+  margin: 0 auto;
+  // max-width: $desktopWidth;
+
+  max-width: 1200px;
+  background: #fff;
+  padding: 30px 147px 50px;
+
+  // @media screen and (max-width: $smDesktopWidth) {
+  //   max-width: $tableWidth;
+  // }
+  // @media screen and (max-width: $tableWidth) {
+  //   max-width: $phoneWidth;
+  // }
+  // @media screen and (max-width: $phoneWidth) {
+  //   max-width: $smPhoneWidth;
+  // }
+}
+.title-container {
+  width: 100%;
+  flex: 0 0 auto;
+  position: relative;
+  margin: 0 auto;
+  max-width: 1200px;
+  background: #fff;
+  padding: 20px 0px 20px 20px;
+  border: 1px solid #dfdfe6;
+}
+.container-without-padding {
+  width: 100%;
+  flex: 0 0 auto;
+  position: relative;
+  margin: 0 auto;
+  max-width: 1200px;
+  background: #fff;
+}
+.container-text {
+  width: 100%;
+  flex: 0 0 auto;
+  position: relative;
+  margin: 0 auto;
+  max-width: 1200px;
+  background: #fff;
+  padding: 0px 220px;
+}
+
+// Modules:
+@import "media-list.scss";
+@import "search-item.scss";
+@import "show-more.scss";
+@import "pagination.scss";
+@import "sub-nav.scss";
+@import "media-item.scss";
+@import "header-search.scss";
+@import "dropdown.scss";
+@import "modal-question-answer.scss";
+@import "modal-question-result.scss";
+@import "elipse-button.scss";
+@import "result-bar.scss";
+@import "advertising.scss";
+@import "default-popup.scss";
+
+// / pages
+@import "pages/index.scss";
+@import "pages/search.scss";
+@import "pages/videos.scss";
+@import "pages/photos.scss";
+@import "pages/questions.scss";
+@import "pages/selected-video.scss";
+@import "pages/photo-album.scss";
+@import "pages/offer-news.scss";
+@import "pages/legal-information.scss";
+@import "pages/advertising.scss";
+@import "pages/Podcast.scss";

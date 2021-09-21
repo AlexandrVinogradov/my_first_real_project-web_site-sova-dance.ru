@@ -1,0 +1,42 @@
+extends ../layout/main
+
+block variables
+  - var title = "Chukotka";
+  - var description = "Description for Chukotka";
+  - var pageClass = "redaction-page";
+
+
+block content
+      <main class="news">
+        <div class="news-wrapper">
+          <div class="news-container">
+            <h1>Редакция</h1>
+          </div>
+          <div class="news-content">
+            <div class="redaction-content">
+              <div class="redaction-content__wrapper">
+                <h2>Информационное агентство «Чукотка»</h2>
+                <div class="redaction-content__main-info">
+                  <div><span>Адрес редакции:</span><p>689000, Россия, Чукотский автономный округ, Анадырь, ул. Ленина, д. 18а</p></div>
+                  <div><span>Главный редактор:</span><p>Литвак Ирина Александровна</p></div>
+                  <div><span>Телефон:</span><a href="#">8 (42722) 2-80-80;</a><a href="#">+7 924 66666 87;</a></div>
+                  <div><span>E-mail:</span> <a href="#">info@prochukotku.ru</a></div>
+                  <div><span>Учредитель:</span><p>Учредитель: АНО «Информационное агентство «Чукотка»</p></div>
+                </div>
+                <span>Свидетельство о регистрации СМИ ЭЛ № ФС 77 - 69723</span>
+                <p>выдано Федеральной службой по надзору в сфере связи, информационных технологий и массовых коммуникаций (Роскомнадзор) 5 мая 2017 г.</p>
+                <img src="assets/img/svidet.png" alt="свидетельство">
+              </div>
+            </div>
+            <div class="news-content-second">
+              <div class="news-content__advertisment">
+                <a href="#" style="background-image: url(assets/img/tele.jpg);"></a>
+              </div>
+              <div class="news-content__advertisment">
+                <a href="#" style="background-image: url(assets/img/tele.jpg);"></a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </main>

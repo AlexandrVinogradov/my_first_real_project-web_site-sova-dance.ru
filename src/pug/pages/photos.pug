@@ -1,0 +1,46 @@
+extends ../layout/main
+
+block variables
+  - var title = "Chukotka";
+  - var description = "Description for Chukotka";
+  - var pageClass = "photos-page"; 
+
+  - var media = ['01', '02', '03', '04', '05', '06', '07', '08']
+  - 
+    var desc = [
+      '«Земли моей начало»: хранитель уходящей эпохи эскимосов Наукана',
+      'Эскимосы: дружба через океан',
+      'Моржи, вдохновение и опыт: профессиональные предпочтения современных чукчей',
+      'Эскимосы: дружба через океан',
+      '«Вагыргын»: побег с «материка»',
+      'Неизвестный из Уэлена',
+      'Как чукча немца учил: зачем ученый из Германии объехал русскую Арктику',
+      'Жизнь русских матрешек в условиях Крайнего Севера',
+      'Воздушный путь через лиман'
+    ]
+
+block content
+      main
+        .title-container
+          h1 Фото
+          +sub-nav()
+        .container-without-padding
+          section.photos-page__content 
+
+            .content__first-item 
+              +mediaItem('001', desc[0])(class="media-first-item")
+            .content__additional-items 
+              each val, id in media 
+                +mediaItem(val, desc[id + 1])
+
+
+
+        .container-without-padding
+          +showMore()
+          +pagination()
+
+
+
+
+
+

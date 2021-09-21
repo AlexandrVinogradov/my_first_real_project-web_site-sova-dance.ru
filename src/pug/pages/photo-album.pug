@@ -1,0 +1,81 @@
+extends ../layout/main
+
+block variables
+  - var title = "Chukotka";
+  - var description = "Description for Chukotka";
+  - var pageClass = "photo-album-page";
+
+block head
+  script(async defer crossorigin="anonymous" src="https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v8.0" nonce="P4DDFZf5")
+ 
+block content
+  main
+    .container-text
+      .page-description-data 
+        a(href='#') фото
+        p 20.04.2019 13:35
+      h1 Концерт в Анадыре в честь 89-летней годовщины со дня образования Чукотского АО
+      p Впечатления от просмотра новой документальной киноленты режиссера Леонида Круглова «Великий Северный путь» об историческом 15-летнем походе Семена Дежнева на Чукотку
+    
+    .container
+      <div class="swiper-article gallery-thumbs" style="margin-top: 13px;">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image:url(assets/img/s1.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(assets/img/s1.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(assets/img/s1.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(assets/img/s1.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(assets/img/s1.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(assets/img/s1.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(assets/img/s1.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(assets/img/s1.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(assets/img/s1.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(assets/img/s1.jpg)"></div>
+        </div>
+      </div>
+      <div class="swiper-article gallery-top" style="margin-bottom: 13px;">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image:url(assets/img/s1.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(assets/img/s1.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(assets/img/s1.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(assets/img/s1.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(assets/img/s1.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(assets/img/s1.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(assets/img/s1.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(assets/img/s1.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(assets/img/s1.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(assets/img/s1.jpg)"></div>
+        </div>
+      </div>
+
+      .album-desc
+        .album-desc__players 
+          p Участники гонки
+          p 1 / 20
+        .album-desc__general
+          p © ИА «Чукотка»
+
+    .container-text
+      p Чукотка одной из первых начала отмечать праздник Крещения. В окружной столице после праздничной литургии в Свято-Троицком кафедральном соборе, которую провёл архиепископ Анадырский и Чукотский Ипатий, в ночь с 18 на 19 января все желающие смогли окунуться в купель. Она установлена рядом с храмом.
+      p Крещенские купания организованы во всех районах округа - в посёлках Угольные Копи и Беринговский Анадырского района, а также в посёлке Эгвекинот и селе Кепервеем.
+      p Рядом с местами массового купания установлены пункты обогрева (тёплые палатки), организовано дежурство сотрудников МЧС, полицейских и медиков.
+
+      <ul class="tags-list">
+        li <a href="#">Чукотка</a>
+        li <a href="#">Белый медведь</a>
+        li <a href="#">WWF России</a>
+        li <a href="#">Животные</a>
+      </ul>
+
+      +media
+      +fbPlugin()
+
+      <div class="materials">
+        h2 Материалы по теме
+        <ul>
+          li <span>03.05.2020</span><a href="#">На защиту прибрежных сёл Чукотки от белых медведей направят 3 млн рублей</a>
+          li <span>03.05.2020</span><a href="#">На защиту прибрежных сёл Чукотки от белых медведей направят 3 млн рублей</a>
+          li <span>03.05.2020</span><a href="#">На защиту прибрежных сёл Чукотки от белых медведей направят 3 млн рублей</a>
+          li <span>03.05.2020</span><a href="#">На защиту прибрежных сёл Чукотки от белых медведей направят 3 млн рублей</a>
+          li <span>03.05.2020</span><a href="#">На защиту прибрежных сёл Чукотки от белых медведей направят 3 млн рублей</a>
+        </ul>
+      </div>

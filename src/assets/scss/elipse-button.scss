@@ -1,0 +1,14 @@
+.elipse-button {
+  background: linear-gradient(0deg, #293d66, #293d66), linear-gradient(0deg, #3d4c99, #3d4c99),
+    linear-gradient(0deg, #2843cc, #2843cc), linear-gradient(0deg, #3377ff, #3377ff), #333333;
+  border-radius: 500px;
+  padding: 18px 40px;
+  cursor: pointer;
+
+  & > a {
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: 'Roboto Condensed';
+  }
+}
