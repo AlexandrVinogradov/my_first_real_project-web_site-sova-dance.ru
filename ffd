@@ -1,0 +1,2 @@
+@babel/core @babel/plugin-proposal-class-properties @babel/preset-env @babel/preset-react @babel/preset-typescript babel-eslint babel-loader clean-webpack-plugin copy-webpack-plugin cross-env css-loader
+csv-loader eslint eslint-loader file-loader html-webpack-plugin less less-loader mini-css-extract-plugin node-sass optimize-css-assets-webpack-plugin papaparse sass-loader style-loader terser-webpack-plugin webpack webpack-bundle-analyzer webpack-cli webpack-dev-server xml-loader
