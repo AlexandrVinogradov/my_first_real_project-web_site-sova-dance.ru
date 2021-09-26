@@ -1,5 +1,11 @@
 .index-page {
   .content-wrapper {
-    padding: 180px;
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+
+    a {
+      display: block;
+    }
   }
 }

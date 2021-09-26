@@ -1,68 +1,23 @@
-+defaultPopup('Нашли ошибку?', '«... Впечатления от просмотра новой документальной киноленты режиссера Леонида Круглова «Великий Северный путь» об историческом 15-летнем походе Семена Дежнева на Чукотку ...»', 'Отправить', 'open-next-popup', true)(class="default-popup-with-ta")
-+defaultPopup('Спасибо!', 'Мы получили ваше сообщение, проверим в ближайшее время!', 'Продолжить чтение', 'close-default-popup')
-
-<header class="header">
-  <div class="header-wrapper">
-    <div class="header-wrapper__top">
-      <div class="header-wrapper__top-first">
-        <div class="header-wrapper__top-logo"><a href="main.php"><img src="assets/img/logo-chukotka.svg" alt="лого"></a></div>
-        <div class="header-wrapper__top-age"><p>12+</p></div>
-      </div>
-      <div class="header-social">
-        <a href="#" style="background-image: url(assets/img/fb.svg); background-repeat: no-repeat;background-position: center;"></a>
-        <a href="#" style="background-image: url(assets/img/vk.svg); background-repeat: no-repeat;background-position: center;"></a>
-        <a href="#" style="background-image: url(assets/img/ok.svg); background-repeat: no-repeat;background-position: center;"></a>
-        <a href="#" style="background-image: url(assets/img/inst.svg); background-repeat: no-repeat;background-position: center;"></a>
-        <a href="#" style="background-image: url(assets/img/youtube.svg); background-repeat: no-repeat;background-position: center;"></a>
-        <a href="#" style="background-image: url(assets/img/rss.svg); background-repeat: no-repeat;background-position: center;"></a>
-      </div>
-      <div class="header-wrapper__top-second">
-        <div class="header-wrapper__top-city">
-          +directionDropdown()
-          <p>28 января, 20:46</p>
+//- ScrollMenu
+<nav class="head-strip">
+    <div class="container  d-flex" id="container">
+        <div>
+            <a href="../index.html">
+                <img src="assets/img/header/iconSovaNew.png" alt="логотип школы танцев sovadance" class="logo-first">
+            </a>
+            <a href="../index.html">
+            <img src="assets/img/header/iconSovaNew-white.png" alt="логотип школы танцев sovadance" class="logo">
+            </a>
         </div>
-
-          <div class="header-wrapper__top-weather">
-          <div class="header-wrapper__top-img">
-            <img src="assets/img/cloud.svg" alt="облако">
-            <span>-24°</span>
-          </div>
-          <span>Ощущается как -24°</span>
+        <div class="menu">
+            <ul class="nav d-flex">
+                <li class="nav menu__aboutus"><a href="../index.html#section-aboutUs">О нас</a></li>
+                <li class="nav menu__gallery"><a href="../index.html#section-gllery">Галерея</a></li>
+                <li class="nav menu__trainers"><a href="../index.html#section-ourTrainers">Преподаватели</a></li>
+                <li class="nav menu__direction"><a href="../napravleniya/index.html"><span class="nav__prise">Направления и расписание</span></a></li>
+                <li class="nav"><a href="../uslugi-iceny/index.html"><span class="nav__prise">Цены</span></a></li>
+                <li class="nav"><a href="#section-contacts">Контакты</a></li>
+            </ul>
         </div>
-      </div>
-      
-      
     </div>
-    <div class="header-wrapper__bottom">
-      <nav class="header-wrapper__bottom-menu close">
-        <ul class="header-wrapper__bottom-list">
-          <a href="#" class="small-logo"><img src="assets/img/small-logo.svg" alt="лого маленькое"></a>
-          <li><a href="#">Новости</a></li>
-          <li><a href="#">COVID-19</a></li>
-          <li><a href="#">ВЭФ-2019</a></li>
-          <li><a href="#">Фото</a></li>
-          <li><a href="#">Видео</a></li>
-          <li><a href="#">Статьи</a></li>
-          <li><a href="#">Спецпроекты</a></li>
-          <li><a href="#">Подкасты</a></li>
-          <li><a href="#">Опросы</a></li>
-          <li><a href="#" class="search-item search-button "><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M8.75 15C12.2018 15 15 12.2018 15 8.75C15 5.29822 12.2018 2.5 8.75 2.5C5.29822 2.5 2.5 5.29822 2.5 8.75C2.5 12.2018 5.29822 15 8.75 15Z" stroke="#3D4C99" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M17.5001 17.5L13.1667 13.1667" stroke="#3D4C99" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg></a></li>
-        </ul>
-      </nav>
-    </div>
-    <button class="mobile-nav__button"></button>
-  </div>
-
-  //- search dropdown
-  .header__search
-    .container-without-padding
-      .header__search_content
-        svg(width="20" height="20").icon-search
-          use(xlink:href="assets/img/search.svg#search")
-        input(type="search" placeholder="Поиск" autofocus).header__search_input
-        a(href="#").header__search_button  Поиск
-
-</header>
+</nav>
