@@ -1,0 +1,167 @@
+extends ../layout/main
+
+block variables
+  - var title = 'Танцы - Школа танцев в Тушино SOVA DANCE';
+  - var description = 'Школа танцев в Тушино для новичков SOVA DANCE приглашает детей и взрослых. Мы находимся не далеко от метро Сходненская, Планерная, Тушинская. Различные танцевальные направления, как групповые, так и индивидуальные. Обучение с нуля по выгодным ценам!';
+  - var pageClass = 'all-directions-page';
+
+block head
+  script(src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js")
+  script new WOW().init();
+
+block content
+  <header class="header" id="header">
+  <div class="container">
+    <div class="direction">
+    <a href="../index.html">
+      <img src="assets/img/btn-back.png" alt="кнопка перехода на главную страницу sovadance" class="btn-back">
+    </a>
+    <div class="hidden_tabl wow fadeInUp d-flex">
+      <a class="btn-Weekdays bubbly-button main-btn">
+      | Расписание
+      </a>
+      //- <a class="btn-weekends bubbly-button main-btn">Выходные дни</a>
+    </div>
+    <div class="direction-wrap d-flex flex-wrap">
+    <h2 class="child-title wow fadeInUp d-fex">
+      | Детские танцевальные направления
+    </h2>
+      <div class="direction__child-direction-card1 direction-card d-flex wow fadeIn" data-wow-delay="0.4s">
+      <img src="assets/img/allDirectionsPage/choreography-kinds.jpg" alt="Хореография в Тушино" class="">
+      <h3>
+        | Baby Dance
+      </h3>
+      <p>
+        span.card__text--style-pink Дети 3-5 лет <br />
+        //- <span class="card__text--style-red">Расписание уточняется</span></br></br> 
+        | Ср 19:00-20:00</br>
+        | Сб 12:00-13:00</br>
+        | 800р. - 1 занятие</br>
+        | 4000р. - 8 занятий
+      </p>
+      <a href="baby-ballet.html" class="direction-card--btn">
+        | Подробнее
+      </a>
+      </div>
+      <div class="direction__child-direction-card1 direction-card d-flex wow fadeIn" data-wow-delay="0.5s">
+      <img src="assets/img/allDirectionsPage/club-mix-kids.jpg" alt="Club Dance в Тушино" class="">
+      <h3>
+        | Club Dance
+      </h3>
+      <p>
+        span.card__text--style-pink Дети 6-8 лет <br />
+        | Пн 17:00-18:00</br>
+        | Чт 17:00-18:00</br>
+        | 800р. - 1 занятие</br>
+        | 4000р. - 8 занятий
+      </p>
+      <a href="club-dance-kids.html" class="direction-card--btn">
+        | Подробнее
+      </a>
+      </div>
+      <div class="direction__child-direction-card1 direction-card d-flex wow fadeIn" data-wow-delay="0.6s">
+      <img src="assets/img/allDirectionsPage/dance-mix-kids.jpg" alt="Dance Mix в Тушино" class="">
+      <h3>
+        | Dance Mix
+      </h3>
+      <p>
+        span.card__text--style-pink Дети 9-16 лет <br />
+        | Пн 18:00-19:00</br>
+        | Чт 18:00-19:00</br>
+        | 800р. - 1 занятие</br>
+        | 4000р. - 8 занятий
+      </p>
+      <a href="dance-mix-kids.html" class="direction-card--btn">
+        | Подробнее
+      </a>
+      </div>
+      <div class="direction__child-direction-card1 direction-card wow fadeIn d-flex" data-wow-delay="0.7s">
+      <img src="assets/img/allDirectionsPage/hip-pop-kids.jpg" alt="Hip-hop в Тушино" class="">
+      <h3>
+        | Latina Kids
+      </h3>
+      <p>
+        span.card__text--style-pink Дети 9-16 лет <br />
+        | Вт 18:00-19:00</br>
+        | Пт 18:00-19:00</br>
+        | 800р. - 1 занятие</br>
+        | 4000р. - 8 занятий
+      </p>
+      <a href="hip-hop.html" class="direction-card--btn">
+        | Подробнее
+      </a>
+      </div>
+    <h2 class="child-title d-fex wow fadeIn" data-wow-delay="0.7s">
+      | Взрослые танцевальные направления
+    </h2>
+      <div class="direction__child-direction-card1 direction-card d-flex wow fadeIn" data-wow-delay="1s">
+      <img src="assets/img/allDirectionsPage/stretching.jpg" alt="Stretching в Тушино" class="">
+      <h3>
+        | Stretching
+      </h3>
+      <p>
+        span.card__text--style-blue Взрослые <br />
+        //- <span class="card__text--style-red">Расписание уточняется</span></br></br> 
+        | Ср 20:00-21:00</br>
+        | Сб 13:00-14:00</br>
+        | 800р. - 1 занятие</br>
+        | 4000р. - 8 занятий
+      </p>
+      <a href="stretching.html" class="direction-card--btn">
+        | Подробнее
+      </a>
+      </div>
+      <div class="direction__child-direction-card1 direction-card d-flex wow fadeIn" data-wow-delay="0.9s">
+      <img src="assets/img/allDirectionsPage/ladys-dance.jpg" alt="Lady`s-dance в Тушино" class="">
+      <h3>
+        | Lady's-dance
+      </h3>
+      <p>
+        span.card__text--style-blue Взрослые <br />
+        | Пн 19:00-20:00</br>
+        | Чт 19:00-20:00</br>
+        | 800р. - 1 занятие</br>
+        | 4000р. - 8 занятий
+      </p>
+      <a href="body-shape.html" class="direction-card--btn">
+        | Подробнее
+      </a>
+      </div>
+      <div class="direction__child-direction-card1 direction-card d-flex wow fadeIn" data-wow-delay="0.7s">
+      <img src="assets/img/allDirectionsPage/zumba.jpg" alt="Zumba в Тушино" class="">
+      <h3>
+        | Body Shape
+      </h3>
+      <p>
+        span.card__text--style-blue Взрослые <br />
+        <span class="card__text--style-red">Расписание уточняется</span></br></br> 
+        | 800р. - 1 занятие</br>
+        | 4000р. - 8 занятий</br>
+        //- 3600р. - 8 занятий 
+      </p>
+      <a href="zumba.html" class="direction-card--btn">
+        | Подробнее
+      </a>
+      </div>
+      <div class="direction__child-direction-card1 direction-card d-flex wow fadeIn" data-wow-delay="0.7s">
+      <img src="assets/img/allDirectionsPage/latina.png" alt="Latina в Тушино" class="">
+      <h3>
+        | Club Latina
+      </h3>
+      <p>
+        span.card__text--style-blue Взрослые <br />
+        //- <span class="card__text--style-red">Расписание уточняется</span></br></br>              
+        | Вт 19:00-20:00</br>
+        | Пт 19:00-20:00</br>
+        | 800р. - 1 занятие</br>
+        | 4000р. - 8 занятий
+      </p>
+      <a href="latina-solo.html" class="direction-card--btn">
+        | Подробнее
+      </a>
+      </div>
+    </div>
+    </div>  
+    </div>
+  </div>
+  </header>
