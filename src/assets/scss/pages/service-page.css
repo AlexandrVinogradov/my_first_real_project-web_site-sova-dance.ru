@@ -46,27 +46,7 @@ a {
     width: 1140px;
     margin: 0 auto;
 }
-/* ScrollMenu */
-.head-strip {
-    background: rgba(0,0,0,0.1)
-}
-.logo {
-    display: none;
-}
-.navScroll img.logo-first {
-    display: none;
-}
-li.nav a {
-    color: #000;
-    font-weight: 600;
-}
-.nav__prise {
-    word-spacing: -2px;
-}
-.menu {
-   padding-top: 40px;
-}
-/* header */
+
 a.btnPopUp {
     color: #e8d5e4;
     border-radius: 50px;

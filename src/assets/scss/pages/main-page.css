@@ -52,30 +52,7 @@ a {
     width: 1140px;
     margin: 0 auto;
 }
-/* ScrollMenu */
-.head-strip {
-    background: rgba(0,0,0,0.1)
-}
-.logo {
-    display: none;
-}
-.navScroll img.logo-first {
-    display: none;
-}
-li.nav a {
-    color: #000;
-    font-weight: 600;
-    transition: 0.3s ease;
-}
-.nav__prise {
-    word-spacing: -2px;
-}
-.menu {
-   padding-top: 40px;
-}
-.menu__direction {
-    width: auto;
-}
+
 /* header */
 .headContent {
     color:black;
@@ -238,7 +215,7 @@ a.bubbly-button:hover {
     justify-content: space-around;
 }
 .ourTrainers__photos-pageOne img {
-    height: 300px;
+    min-height: 300px;
 }
 .ourTrainers__photos-pageTwo {
     height: 300px;
@@ -411,150 +388,7 @@ a.bubbly-button:hover {
     width: 110px;
     padding-bottom: 30px;
 }
-/* Contacts */
-/* Widgets */
-#vk_groups {
-    margin-top: 20px;
-}
-.section-contacts {
-    background: #e6e6e6;
-    padding-top: 70px;
-    position: relative;
-}
-.contacts-ad h2 {
-    padding-bottom: 40px;
-    text-align: center;
-    color: #423d3d;
-    font-size: 24px;
-}
-.contacts-inf h2 {
-    text-transform: capitalize;
-    font-weight: 400;
-    padding-bottom: 30px;
-    padding-top: 30px;
-    font-size: 20px;
-    color: #423d3d;
-}
-.contacts-inf h3 {
-    text-transform: none;
-    font-weight: 400;
-    padding-bottom: 15px;
-    color: #423d3d;
-}
-.contacts-inf h4 {
-    text-transform: none;
-    font-weight: 400;
-    color: #423d3d;
-}
-.contacts-ad__btn {
-    justify-content: space-evenly;
-    padding-bottom: 50px;
-}
-.contact-btn {
-    width: 290px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-.contacts-inf {
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-    margin-left: 20px;
-}
-.contacts-inf__widgets {
-    margin-right: 40px;
-}
-.contacts-inf__link {
-    padding-bottom: 40px;
-    width: 350px;
-    margin-left: 40px;
-}
-.contacts-inf__img {
-    width: 500px;
-}
-.inst-logo {
-    width: 70px;
-}
-.vk-logo {
-    width: 70px;
-}
-.contact-inf__border {
-    border: 1px solid #ff0081;
-    width: 70%;
-    margin: auto;
-}
-.map {
-  height: 500px;
-  width: 100%; 
-  margin-top: 50px;
-}
-/* map js */
-.mapLogo {
-    width: 30px;
-    height: 30px;
-}
-.mapTitle {
-    color: #000;  
-}
-.contact-card {
-    justify-content: space-evenly;
-    display: block;
-    position: absolute;
-    left: 60px;
-    bottom: 45px;
-    z-index: 1;
-    background: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    width: 400px;
-}
-.contact-cadr__img {
-    height: 250px;
-    width: 400px;
-}
-.contact-card__inf {
-    padding: 20px;
-    padding-top: 20px;
-    justify-content: space-between;
-    align-items: center;
-}
-.contact-card__title h3 {
-    font-size: 23px;
-    font-family: 'Roboto Mono', monospace;
-    font-weight: 700;
-}
-.contact-card__title h4 {
-    font-weight: 400;
-    text-transform: capitalize;
-    font-size: 23px;
-    padding-top: 5px;
-    font-family: 'Roboto Mono', monospace;
-}
-.contact-card__title h5 {
-    font-weight: 400;
-    text-transform: capitalize;
-    font-size: 16px;
-    padding-top: 5px;
-    font-family: 'Roboto Mono', monospace;
-}
-.contact-cadr__logo {
-    height: 70px;
-    width: 70px;
-    padding-right: 20px;
-}
-.btn-way {
-    position: absolute;  
-    bottom: 45px;
-    right: 200px;
-    cursor: pointer;
-}
-.how-to-way  {
-    padding: 10px;
-}
-.how-to-way h2 {
-    padding-bottom: 20px;
-    text-transform: none;
-}
+/* video */
 .video {
     display: none;
 }
@@ -698,7 +532,10 @@ _:-ms-fullscreen, :root .wcm_button_ic {
         width: 700px;
     }
     /* trainers */
-    .ourTrainers__photos-pageOne {
+    .section-ourTrainers {
+        display: none;
+    }
+    /* .ourTrainers__photos-pageOne {
         justify-content: space-between; 
     }
     .ourTrainers__photos-pageTwo {
@@ -733,7 +570,7 @@ _:-ms-fullscreen, :root .wcm_button_ic {
     }
     .trainer-card__shadow3 {
         width: 150px;
-    }
+    } */
     /* achieve */
     .section-achievements {
         padding-top: 50px;
@@ -750,17 +587,7 @@ _:-ms-fullscreen, :root .wcm_button_ic {
         padding-top: 50px;
         padding-bottom: 0px;
     }
-    /* contact */
-    .contacts-ad h2 {
-        font-size: 22px;
-    }
-    .contact-btn{
-        width: 250px;
-        font-size: 14px;
-    }
-    .btn-way {
-        right: 100px;
-    }
+
 }
 @media screen and (max-width: 767px) {
     .container {
@@ -769,15 +596,7 @@ _:-ms-fullscreen, :root .wcm_button_ic {
     .logo-first {
         width: 150px;
     }
-    li.nav {
-    padding-left: 20px;
-    }
-    .nav {
-    align-items: flex-end;   
-    }
-    .menu__direction {
-        width: 120px;
-    }
+
     .headContent__title h1 {
         font-size: 28px; 
     }
@@ -853,10 +672,6 @@ _:-ms-fullscreen, :root .wcm_button_ic {
     .video {
         width: 500px;
     }
-    /* trainers */
-    .section-ourTrainers {
-        display: none;
-    }
     /* achieve */
     .section-achievements h2 {
         font-size: 18px;
@@ -883,68 +698,11 @@ _:-ms-fullscreen, :root .wcm_button_ic {
         height: 330px;
     }
 
-    .contacts-ad h2 {
-        font-size: 20px;
-    }
-    .contact-btn{
-        width: 200px;
-        font-size: 14px;
-        align-items: center;
-        justify-content: center;
-    }
-    .contacts-inf {
-        flex-direction: column-reverse;
-        margin: 0;
-    }
-    .contacts-inf__link {
-        margin: 0;
-        text-align: center;
-    }
-    .contacts-inf__widgets {
-        margin: 0;
-    }
-    .btn-way {
-        right: 85px;
-    }
+
 }
 @media screen and (max-width: 576px) {
     .container {
         width: 90%;    
-    }
-    .nav {
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-    #container {
-        justify-content: space-evenly; 
-        padding-bottom: 15px;
-        align-items: center;
-        align-items: center;
-    }
-    .nav__prise {
-        word-spacing: 0px;
-    }
-    .menu__direction {
-        width: auto;
-    }
-    .menu {
-        padding-top: 20px;
-    }
-    .logo-first {
-        width: 100px;
-        padding-top: 15px;
-    }
-    li.nav {
-        padding-bottom: 3px;
-    }
-    .nav {
-        font-size: 12px;
-    }
-    nav.navScroll a {
-        font-size: 10px;
-    }
-    img.logoScroll {
-        width: 80px;
     }
         .headContent {
             flex-direction: column-reverse;
@@ -1087,37 +845,5 @@ _:-ms-fullscreen, :root .wcm_button_ic {
             padding-bottom: 0px;
             height: 210px;
         }
-    /* contacts */
-    .section-contacts {
-        padding-top: 45px;
-    }
-    .contacts-ad h2 {
-        font-size: 16px;
-    }
-    .contacts-ad__btn {
-        justify-content: space-evenly;
-    }
-    .contact-btn {
-        /* width: 120px; */
-        font-size: 14px;
-        /* padding: 10px; */
-    }
-    .contacts-inf__link {
-        width: auto;
-    }
-    .contacts-inf {
-        padding-bottom: 30px;
-    }
-    .contacts-inf h3 {
-        font-size: 16px;
-    }
-    .contacts-inf {
-    }
-    .map {
-        margin-top: 30px;
-        height: 400px;
-    }
-    .btn-way {
-        display: none;
-    }
+
 }

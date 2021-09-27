@@ -13,9 +13,13 @@
 
 // Modules:
 @import "animate.css";
+@import "prettySticky.css";
+
+@import "header.css";
+@import "footer.css";
+
 @import "jquery.arcticmodal-0.3.css";
 @import "lightbox.min.css";
-@import "prettySticky.css";
 @import "simple.css";
 @import "slick-theme.css";
 @import "slick.css";
@@ -23,9 +27,10 @@
 
 
 // / pages
-@import "pages/page_napravleniya.css";
-@import "pages/direction-pages.css";
-@import "pages/sova-dance2.css";
-@import "pages/prise_and_service.css";
+@import "pages/main-page.css";
+@import "pages/directions-page.css";
+@import "pages/service-page.css";
+
+@import "pages/direction.css";
 
 

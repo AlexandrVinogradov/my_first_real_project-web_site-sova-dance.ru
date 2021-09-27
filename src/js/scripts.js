@@ -1,8 +1,9 @@
 $(document).ready(function(){
-	// $(".nav a").smoothScroll({
-	// 	offset: -$("nav").outerHeight()
-	// });
-// popUp	
+	$(".nav a").smoothScroll({
+		offset: -$("nav").outerHeight()
+	});
+
+	// popUp	
 	$('a.btn-way11111111').click(function (){
 		$('#exampleModal').arcticmodal();
 	});
@@ -10,9 +11,9 @@ $(document).ready(function(){
 	$('a.btn-Weekdays').click(function (){
 		$('#exampleModal-weekdays').arcticmodal();
 	});
-	$('a.btn-weekends').click(function (){
-		$('#exampleModal-weekends').arcticmodal();
-	});
+	// $('a.btn-weekends').click(function (){
+	// 	$('#exampleModal-weekends').arcticmodal();
+	// });
 	// way
 	$('a.btn-way').click(function (){
 		$('#exampleModal-way').arcticmodal();
@@ -25,16 +26,17 @@ $(document).ready(function(){
 	$('a.btn-solo').click(function (){
 		$('#exampleModal-solo').arcticmodal();
 	});
-	$('a.btn-wedding').click(function (){
-		$('#exampleModal-wedding').arcticmodal();
-	});
-	$('a.btn-corp').click(function (){
-		$('#exampleModal-corp').arcticmodal();
-	});
-	$('a.btn-zal').click(function (){
-		$('#exampleModal-zal').arcticmodal();
-	});
-// dinamic_shadow
+	// $('a.btn-wedding').click(function (){
+	// 	$('#exampleModal-wedding').arcticmodal();
+	// });
+	// $('a.btn-corp').click(function (){
+	// 	$('#exampleModal-corp').arcticmodal();
+	// });
+	// $('a.btn-zal').click(function (){
+	// 	$('#exampleModal-zal').arcticmodal();
+	// });
+
+	// dynamic_shadow
 	$('#slow_nav  ul li').hover(
 		function () {
 			$('ul', this).stop().slideDown(400);
@@ -55,29 +57,29 @@ $(document).ready(function(){
 		$('.trainer-card__shadow3').toggleClass('slide-up');
 		$('.trainer-card__shadow3 p').toggleClass('card-text__visible');
 	});
-	$('.trainer-card4-hover').hover(function(){
-		$('.trainer-card__shadow4').toggleClass('slide-up');
-		$('.trainer-card__shadow4 p').toggleClass('card-text__visible');
-	});
-	$('.trainer-card5-hover').hover(function(){
-		$('.trainer-card__shadow5').toggleClass('slide-up');
-		$('.trainer-card__shadow5 p').toggleClass('card-text__visible');
-	});
+	// $('.trainer-card4-hover').hover(function(){
+	// 	$('.trainer-card__shadow4').toggleClass('slide-up');
+	// 	$('.trainer-card__shadow4 p').toggleClass('card-text__visible');
+	// });
+	// $('.trainer-card5-hover').hover(function(){
+	// 	$('.trainer-card__shadow5').toggleClass('slide-up');
+	// 	$('.trainer-card__shadow5 p').toggleClass('card-text__visible');
+	// });
 	$('.trainer-card6-hover').hover(function(){
 		$('.trainer-card__shadow6').toggleClass('slide-up');
 		$('.trainer-card__shadow6 p').toggleClass('card-text__visible');
 	});
-	$('.trainer-card7-hover').hover(function(){
-		$('.trainer-card__shadow7').toggleClass('slide-up');
-		$('.trainer-card__shadow7 p').toggleClass('card-text__visible');
-	});
+	// $('.trainer-card7-hover').hover(function(){
+	// 	$('.trainer-card__shadow7').toggleClass('slide-up');
+	// 	$('.trainer-card__shadow7 p').toggleClass('card-text__visible');
+	// });
 
 
-// //slide
-// 	$('.slide').slick({
-// 		// autoplay: true,
-// 		// autoplaySpeed: 6000,
-// 	});
+	// //slide // вызвано в конце main-page
+	// 	$('.slide').slick({
+	// 		// autoplay: true,
+	// 		// autoplaySpeed: 6000,
+	// 	});
 //map
 	ymaps.ready(init);
 	var map,

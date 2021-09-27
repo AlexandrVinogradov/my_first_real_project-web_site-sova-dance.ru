@@ -5,17 +5,15 @@ block variables
   - var description = 'Школа танцев в Тушино для новичков SOVA DANCE приглашает детей и взрослых. Мы находимся не далеко от метро Сходненская, Планерная, Тушинская. Различные танцевальные направления, как групповые, так и индивидуальные. Обучение с нуля по выгодным ценам!';
   - var pageClass = 'main-page';
 
-block head 
-  //- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
-  <script src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
-  //- <script src="//kenwheeler.github.io/slick/slick/slick.js"></script>
-  <script>new WOW().init();</script>
-
+block head
+  script(
+    src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"
+  ) 
+  script(src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js") 
+  script 
+    | new WOW().init();
 
 block content
-
-  //- header 
   <header class="header" id="header">
     <div class="container">
       <div class="headContent d-flex">
@@ -160,11 +158,11 @@ block content
     </div>
   </section>
   //- Video 
-   <section class="section-video" id="section-gllery">
-    <div class="container">
-      <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/fVQ-CyJkW-o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>       
-    </div>
-    </section> 
+    <section class="section-video" id="section-gllery">
+     <div class="container">
+       <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/fVQ-CyJkW-o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>       
+     </div>
+     </section> 
   //- OurTrainers 
   <section class="section-ourTrainers" id="section-ourTrainers">
     <div class="container">
@@ -192,9 +190,9 @@ block content
                 </h3>
                 <p>
                   | Направления:</br></br></br>
-                  a(href="napravleniya/baby-ballet.html" class="trainers-link") BABY DANCE </br></br>
-                  a(href="napravleniya/latina-solo.html" class="trainers-link") LATINA SOLO </br></br>
-                  a(href="napravleniya/hip-hop.html" class="trainers-link") LATINA KIDS </br>
+                  a.trainers-link(href="napravleniya/baby-ballet.html") BABY DANCE </br></br>
+                  a.trainers-link(href="napravleniya/latina-solo.html") LATINA SOLO </br></br>
+                  a.trainers-link(href="napravleniya/hip-hop.html") LATINA KIDS </br>
                   //- <a href="napravleniya/dance-mix.html" class="trainers-link" DANCE MIX</a></br>
                   //- <a href="napravleniya/street-dance-experimental.html" class="trainers-link" ПАРНЫЕ ТАНЦЫ</a></br>
                 </p>
@@ -210,11 +208,11 @@ block content
                 </h3>
                 <p>
                   | Направления: </br></br></br>
-                  a(href="napravleniya/baby-ballet.html" class="trainers-link") BABY DANCE</a></br></br>
-                  a(href="napravleniya/stretching.html" class="trainers-link") STRETCHING</a></br></br>
-                  a(href="napravleniya/body-shape.html" class="trainers-link") LADYS DANCE</a></br></br>
-                  a(href="napravleniya/dance-mix-kids.html" class="trainers-link") DANCE MIX</a></br></br>
-                  a(href="napravleniya/club-dance-kids.html" class="trainers-link") CLUB DANCE</a></br></br>
+                  a.trainers-link(href="napravleniya/baby-ballet.html") BABY DANCE</a></br></br>
+                  a.trainers-link(href="napravleniya/stretching.html") STRETCHING</a></br></br>
+                  a.trainers-link(href="napravleniya/body-shape.html") LADYS DANCE</a></br></br>
+                  a.trainers-link(href="napravleniya/dance-mix-kids.html") DANCE MIX</a></br></br>
+                  a.trainers-link(href="napravleniya/club-dance-kids.html") CLUB DANCE</a></br></br>
                 </p>
               </div>
             </div>
@@ -229,7 +227,7 @@ block content
                 <p>
                   | Направления: </br></br></br>
                   //- <a href="napravleniya/hip-hop.html" class="trainers-link" DANCE MIX</a> </br>
-                  a(href="napravleniya/zumba.html" class="trainers-link") BODY SHAPE</a></br></br>
+                  a.trainers-link(href="napravleniya/zumba.html") BODY SHAPE</a></br></br>
                   //- <a href="napravleniya/baby-ballet.html" class="trainers-link" BABY DANCE</a> 
                 </p>
               </div>
@@ -244,7 +242,7 @@ block content
                 </h3>
                 <p>
                   | Направления: </br></br></br>
-                  a(class="trainers-link") ЦЫГАНСКИЕ ТАНЦЫ</a></br></br>
+                  a.trainers-link ЦЫГАНСКИЕ ТАНЦЫ</a></br></br>
                 </p>
               </div>
             </div>
@@ -414,142 +412,8 @@ block content
   </section>
 
   block scripts
-    //- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    //- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    //- <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    //- <script>$('.slide').slick({});</script>
-    //- <script>new WOW().init();</script>
-    //- <script>$('.slide').slick({});</script>
-
-  //- <script src="js/wow.min.js"></script>
-//-   <script>new WOW().init();</script>
-//- script 
-//-     include js/wow-min.js
-
-//- <script src="js/wow.min.js"></script>
-//- <script>
-//-     new WOW().init();
-//- </script>
-//- Contacts 
-//-     <section class="section-contacts" id="section-contacts">
-//-         <div class="container">
-//-             <div class="contacts-ad">
-//-                 <h2 class="wow fadeInUp" data-wow-delay="0.2s">
-//-                     | Запишись сейчас на первое занятие и получи скидку 50%
-//-                 </h2>
-//-                 <div class="contacts-ad__btn d-flex">
-//-                     <a href="https://mssg.me/sova_dance" class="bubbly-button main-btn contact-btn d-flex wow fadeInUp" data-wow-delay="0.4s">
-//-                         | Записаться на пробное занятие 
-//-                     </a>
-//-                     <a href="napravleniya/index.html" class="bubbly-button main-btn contact-btn d-flex wow fadeInUp" data-wow-delay="0.4s">
-//-                         | Расписание занятий
-//-                     </a>
-//-                 </div>
-//-             </div>
-//-             <div class="contacts-inf d-flex">
-//-                 <div class="contacts-inf__widgets wow fadeInUp" data-wow-delay="0.5s">
-//-                     <!-- Inst Widget -->
-//-                     <div data-mc-src="7ad15dec-b2c6-45d2-b6ee-f1011fac71bd#instagram"></div>
-//-                     <script 
-//-                     src="https://cdn2.woxo.tech/a.js#6115254a17f2780015cfc185" 
-//-                     async data-usrc>
-//-                     </script>
-//-                     <!-- Vk Widget -->
-//-                     <script type="text/javascript" src="https://vk.com/js/api/openapi.js?160"></script>
-//-                     <div id="vk_groups"></div>
-//-                     <script type="text/javascript">
-//-                     VK.Widgets.Group("vk_groups", {mode: 3, width: "330"}, 109932785);
-//-                     </script>
-//-                 </div>
-//-                 <!-- VK Widget message  -->
-//-                 <div id="vk_community_messages" class="wow flip" data-wow-delay="90s"></div>
-//-                 <script type="text/javascript">
-//-                 VK.Widgets.CommunityMessages("vk_community_messages", 109932785, {disableButtonTooltip: "1"});
-//-                 </script>
-//-                 <div class="contacts-inf__link wow fadeInUp" data-wow-delay="0.5s">
-//-                     <a href="https://www.instagram.com/sovadance/">
-//-                         <img src="assets/img/mainPage/iconinst.png" alt="инстаграмм sovadance" title="Sova-Dance в инстаграм" class="inst-logo">
-//-                     </a>
-//-                     <a href="https://vk.com/owl_dance">
-//-                         <img src="assets/img/mainPage/iconvk.png" alt="вконтакте sovadance" title="Sova-Dance вконтакте" class="vk-logo">
-//-                     </a>
-//-                     <h2>
-//-                         <a href='tel:+79269359556'>Телефон: +7(926) 935-95-56 (WhatsApp; Viber)</a>
-//-                     </h2>
-//-                     <h3>
-//-                         | Москва ул.Фабрициуса д.22
-//-                     </h3>
-//-                     <h4>
-//-                         | Эл.почта: sova.dance@yandex.ru
-//-                     </h4>
-//-                 </div>
-//-             </div>
-//-             <div class="contact-inf__border"></div>
-//-         </div>
-//-         <!-- map -->
-//-         <div id="map" class="map">
-//-         </div>
-//-         <!-- map -->
-//-         <div class="contact-card  wow fadeIn" data-wow-delay="1s">
-//-             <img src="assets/img/mainPage/img_2.jpg" alt="sovadance контакты" title="контакты Sova-Dance" class="contact-cadr__img">
-//-             <div class="contact-card__inf d-flex">
-//-                 <div class="contact-card__title">
-//-                     <h3>
-//-                         | +7(926)935-95-56
-//-                     </h3>
-//-                     <h4>
-//-                         | Sova-dance</br>
-//-                     </h4>
-//-                     <h5>
-//-                         | м. Сходненская</br>
-//-                         | Фабрициуса 22
-//-                     </h5>
-//-                 </div>
-//-                 <div class="contact-card__logo">
-//-                     <img src="assets/img/mainPage/iconSova.png" alt="sovadance контакты" title="контакты Sova-Dance" class="contact-cadr__logo">
-//-                 </div>
-//-             </div>
-//-         </div>
-//-         <a class="bubbly-button main-btn btn-way wow fadeIn" data-wow-delay="1s">
-//-             | Как пройти
-//-         </a>
-//-     </section>
-//- <!-- popUp_html way -->
-//- <div style="display: none;">
-//-     <div class="box-modal-way" id="exampleModal-way">
-//-         <div class="box-modal_close arcticmodal-close">закрыть</div>
-//-         <div class="how-to-way">
-//-             <h2>
-//-                 | Как нас найти?
-//-             </h2>
-//-             <p>
-//-                 | ул. Фабрициуса 22. Это высокий жилой дом за забором. Калитка для прохода находится со стороны Колледжа Полиции.</br></br>
-//-                 | Если охрана будет спрашивать куда вы - скажите в школу танцев. Нужно обойти дом сзади (с обратной стороны от подъездов).</br></br>
-//-                 | Там с одного угла будет тренажёрный зал, а с другого угла - школа английского языка. </br></br>
-//-                 | Вам нужен вход, которых находится посередине (по лестнице наверх). На двери пока нет никакой вывески. Около двери есть звонок, нужно будет позвонить и Вам откроют.
-//-             </p> 
-//-         </div>
-//-     </div>
-//- </div>
-//- map 
-//- <script src="https://api-maps.yandex.ru/2.1/?apikey=<ваш API-ключ>&lang=ru_RU" type="text/javascript"></script>
-//- <!-- jquery -->
-//- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
-//- <!-- parallax -->
-//- <script src="js/parallax.min.js"></script>
-//- <!-- animation -->
-//- <link rel= "stylesheet" href="css/animate.css" media="handheld,only screen and (min-device-width:1024px)"/>
-  //- <!-- carousel -->
-  //- <script src="js/slick.min.js"></script>
-  //- <!--popUp-->
-  //- <script src="js/jquery.arcticmodal-0.3.min.js"></script>
-  //- <!--lightBox-->
-  //- <script src="js/lightbox.min.js"></script>
-  //- <!-- menu -->
-  //- <script src="js/prettySticky.js"></script>
-  //- <!-- scroll -->
-  //- <script src="js/jquery.malihu.PageScroll2id.min.js"></script>
-  //- <script src="js/common.js"></script>
-  //- <!-- mainJS -->
-  //- <script src="js/scripts.js"></script>
+    script(
+      src="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    )
+    script
+      | $('.slide').slick({});
