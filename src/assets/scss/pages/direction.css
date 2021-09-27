@@ -178,10 +178,6 @@ a.bubbly-button:hover {
     .main-btn:after {
         display: none;
     }
-    .contact-card__title h3 {
-        text-decoration: none;
-        color: black;
-    }
 }
 /* adaptio for IE */
 _:-ms-fullscreen, :root .contacts-ad__btn  { 

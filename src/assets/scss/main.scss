@@ -16,7 +16,6 @@
 @import "prettySticky.css";
 
 @import "header.css";
-@import "footer.css";
 
 @import "jquery.arcticmodal-0.3.css";
 @import "lightbox.min.css";
@@ -25,12 +24,13 @@
 @import "slick.css";
 @import "style-btn.css";
 
+@import "footer.css";
 
 // / pages
-@import "pages/main-page.css";
+@import "pages/direction.css";
 @import "pages/directions-page.css";
 @import "pages/service-page.css";
 
-@import "pages/direction.css";
+@import "pages/main-page.css";
 
 

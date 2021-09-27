@@ -11,7 +11,9 @@ block head
   ) 
   script(src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js") 
   script 
-    | new WOW().init();
+    | new WOW({
+    |   mobile: false
+    | }).init();
 
 block content
   <header class="header" id="header">

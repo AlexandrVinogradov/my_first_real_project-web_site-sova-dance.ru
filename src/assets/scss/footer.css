@@ -196,9 +196,9 @@
         justify-content: space-evenly;
     }
     .contact-btn {
-        /* width: 120px; */
+        width: 120px;
         font-size: 14px;
-        /* padding: 10px; */
+        padding: 10px;
     }
     .contacts-inf__link {
         width: auto;
@@ -217,5 +217,13 @@
     }
     .btn-way {
         display: none;
+    }
+}
+
+/* adaption for EDGE */
+@supports (-ms-ime-align:auto) { 
+    .contact-card__title h3 {
+        text-decoration: none;
+        color: black;
     }
 }
