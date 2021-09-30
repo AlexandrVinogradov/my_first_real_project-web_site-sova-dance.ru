@@ -1,4 +1,4 @@
-console.log("its work");
+// console.log("its work");
 
 // import $ from 'jquery';
 // window.$ = window.jQuery = $;
