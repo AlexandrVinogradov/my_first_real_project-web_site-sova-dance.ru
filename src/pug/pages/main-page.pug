@@ -6,14 +6,6 @@ block variables
   - var pageClass = 'main-page';
 
 block head
-  script(
-    src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"
-  ) 
-  script(src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js") 
-  script 
-    | new WOW({
-    |   mobile: false
-    | }).init();
 
 block content
   <header class="header" id="header">
@@ -137,7 +129,7 @@ block content
           </h3>
           <p>
             | &nbsp; Танцы прекрасно тренируют силу и гибкость, развивают
-            | координацию движений. Они полезны для сердечнососудистой и
+            | координацию движений. Они полезны для сердечно-сосудистой и
             | дыхательной системы.</br></br>
 
             | &nbsp; Занятия способствуют стройности,
@@ -415,7 +407,7 @@ block content
 
   block scripts
     script(
-      src="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
-    )
-    script
-      | $('.slide').slick({});
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js",
+      type="text/javascript"
+    ) 
+    script $('.slide').slick({});

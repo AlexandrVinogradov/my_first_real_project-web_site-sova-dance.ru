@@ -415,6 +415,7 @@ a.bubbly-button:hover {
 .trainer-card {
     height: 300px;
     width: 205px; 
+    overflow: hidden;
 }
 .ourTrainers__photos-pageOne {
     display: flex!important;

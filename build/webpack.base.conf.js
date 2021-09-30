@@ -23,7 +23,7 @@ const PAGES = fs.readdirSync(PAGES_DIR).filter(fileName => fileName.endsWith('.p
 
 module.exports = {
   externals: {
-    paths: PATHS
+    paths: PATHS,
   },
   entry: {
     app: PATHS.src

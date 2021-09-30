@@ -1,4 +1,24 @@
+// import { WOW } from 'wowjs'
+// import { slick } from 'slick-carousel'
+
+// import $ from 'jquery';
+// window.$ = window.jQuery = $;
+// import 'slick-carousel'
+
+// import $ from 'jquery'; 
+// global.jQuery = $;
+// global.$ = $;
+
 $(document).ready(function(){
+
+	// new WOW().init();
+
+	// slide // вызвано в конце main-page
+	// $('.slide').slick({
+	// 	// autoplay: true,
+	// 	// autoplaySpeed: 6000,
+	// });
+
 	$(".nav a").smoothScroll({
 		offset: -$("nav").outerHeight()
 	});
@@ -75,12 +95,8 @@ $(document).ready(function(){
 	// });
 
 
-	// //slide // вызвано в конце main-page
-	// 	$('.slide').slick({
-	// 		// autoplay: true,
-	// 		// autoplaySpeed: 6000,
-	// 	});
-//map
+
+	// map
 	ymaps.ready(init);
 	var map,
 		myPlacemark1,
