@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "My template",
   "main": "index.js",
+  "homepage": "main-page.html",
   "scripts": {
     "dev": "webpack-dev-server --open --config ./build/webpack.dev.conf.js",
     "build": "webpack --config ./build/webpack.build.conf.js"
