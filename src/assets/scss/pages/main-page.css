@@ -137,7 +137,8 @@ a.bubbly-button:hover {
 }
 /* Gallery */
 .section-gllery {
-    background: url(/assets/img/mainPage/perya.jpg) no-repeat center top / cover;
+    /* background: url(assets/img/mainPage/perya.jpg) no-repeat center top / cover; */
+    /* background: url(../../img/mainPage/perya.jpg) no-repeat center top / cover; */
     padding-bottom: 100px;
     padding-top: 70px;
 }
