@@ -4,10 +4,16 @@
 // window.$ = window.jQuery = $;
 // import 'slick-carousel'
 
-$(document).ready(function(){
-	// slide // вызвано в конце main-page
+
+document.addEventListener(
+    'DOMContentLoaded',
+    (() => {
+
+// $(document).ready(function(){
 	$('.slide').slick({
 		// autoplay: true,
 		// autoplaySpeed: 6000,
 	});
-})
+// })
+})()
+);

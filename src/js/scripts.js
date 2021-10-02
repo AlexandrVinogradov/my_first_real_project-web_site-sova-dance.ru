@@ -1,23 +1,11 @@
-// import { WOW } from 'wowjs'
-// import { slick } from 'slick-carousel'
 
-// import $ from 'jquery';
-// window.$ = window.jQuery = $;
-// import 'slick-carousel'
+document.addEventListener(
+    'DOMContentLoaded',
+    (() => {
 
-// import $ from 'jquery'; 
-// global.jQuery = $;
-// global.$ = $;
+// $(document).ready(function(){
 
-$(document).ready(function(){
 
-	// new WOW().init();
-
-	// slide // вызвано в конце main-page
-	// $('.slide').slick({
-	// 	// autoplay: true,
-	// 	// autoplaySpeed: 6000,
-	// });
 
 	$(".nav a").smoothScroll({
 		offset: -$("nav").outerHeight()
@@ -166,4 +154,6 @@ $(document).ready(function(){
 
 
 
-});
+// });
+})()
+);

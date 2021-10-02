@@ -1,5 +1,17 @@
 import { WOW } from 'wowjs'
 
-$(document).ready(function(){
-    new WOW().init();
-})
+
+
+document.addEventListener(
+    'DOMContentLoaded',
+    (() => {
+
+    // $(document).ready(function(){
+    new WOW({
+        mobile: false, 
+        live: false
+    }).init();
+    // })
+
+})()
+);
