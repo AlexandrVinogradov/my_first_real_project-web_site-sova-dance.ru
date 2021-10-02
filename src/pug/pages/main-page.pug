@@ -2,7 +2,7 @@ extends ../layout/main
 
 block variables
   - var title = 'Школа танцев в Тушино SOVA DANCE';
-  - var description = 'Школа танцев в Тушино для новичков SOVA DANCE приглашает детей и взрослых. Мы находимся не далеко от метро Сходненская, Планерная, Тушинская. Различные танцевальные направления, как групповые, так и индивидуальные. Обучение с нуля по выгодным ценам!';
+  - var description = 'Школа танцев в Тушино Sova Dance приглашает на занятия детей и взрослых. Танцевальная студия находится не далеко от метро Сходненская Планерная и Тушинсквя.';
   - var pageClass = 'main-page';
 
 block head
@@ -100,26 +100,26 @@ block content
       <div class="gallery d-flex">
         <div class="gallery__photo">
           <div class="gallery__photo-firstStrip d-flex">
-            <a href="assets/img/mainPage/gallery/photo1.jpg" data-lightbox="image-1">
+            <a href="assets/img/mainPage/gallery/photo1.jpg" aria-label="фото преподавателя sovadance" data-lightbox="image-1">
             <img src="assets/img/mainPage/gallery/photo1.jpg" alt="фото преподавателя sovadance" title="Преподаватель Мария" class="photo1 wow fadeInUp" data-wow-delay="0.5s">
             </a>
-            <a href="assets/img/mainPage/gallery/photo2.jpg" data-lightbox="image-1">
+            <a href="assets/img/mainPage/gallery/photo2.jpg" aria-label="Мы танцуем!)" data-lightbox="image-1">
             <img src="assets/img/mainPage/gallery/photo2.jpg" alt="танцы в тушино" title="Мы танцуем!)" class="photo2 wow fadeInUp" data-wow-delay="0.6s"> 
             </a>
           </div>
           <div class="gallery__photo-secondStrip d-flex">
-            <a href="assets/img/mainPage/gallery/photo3.jpg" data-lightbox="image-1">
+            <a href="assets/img/mainPage/gallery/photo3.jpg" aria-label="ученики школы танцев" data-lightbox="image-1">
             <img src="assets/img/mainPage/gallery/photo3.jpg" alt="ученики школы танцев" title="Ученики школы танцев Sova-Dance" class="photo3 wow fadeInUp" data-wow-delay="0.8s">
             </a>
-            <a href="assets/img/mainPage/gallery/photo4.jpg" data-lightbox="image-1">
+            <a href="assets/img/mainPage/gallery/photo4.jpg" aria-label="ученики школы танцев sovadance" data-lightbox="image-1">
             <img src="assets/img/mainPage/gallery/photo4.jpg" alt="ученики школы танцев sovadance" title="ученики школы танцев Sova-Dance" class="photo4 wow fadeInUp" data-wow-delay="0.7s">
             </a>
           </div>
           <div class="gallery__photo-thirdStrip d-flex">
-            <a href="assets/img/mainPage/gallery/photo5.jpg" data-lightbox="image-1">
+            <a href="assets/img/mainPage/gallery/photo5.jpg" aria-label="отчетный концерт sovadance в Тушино" data-lightbox="image-1">
             <img src="assets/img/mainPage/gallery/photo5.jpg" alt="отчетный концерт sovadance в Тушино" title="Отчетный концерт Sova-Dance в Тушино" class="photo5 wow fadeInUp" data-wow-delay="0.9s">
             </a>
-            <a href="assets/img/mainPage/gallery/photo6.jpg" data-lightbox="image-1">
+            <a href="assets/img/mainPage/gallery/photo6.jpg" aria-label="фото со съемок sovadance" data-lightbox="image-1">
             <img src="assets/img/mainPage/gallery/photo6.jpg" alt="фото со съемок sovadance" title="Фото со съемок Sova-Dance" class="photo6 wow fadeInUp" data-wow-delay="1s">
             </a>     
           </div>
@@ -233,7 +233,7 @@ block content
                 </h3>
                 <p>
                   | Направления: </br></br></br>
-                  a.trainers-link ЦЫГАНСКИЕ ТАНЦЫ</a></br></br>
+                  a.trainers-link(href="main-page.html") ЦЫГАНСКИЕ ТАНЦЫ</a></br></br>
                 </p>
               </div>
             </div>

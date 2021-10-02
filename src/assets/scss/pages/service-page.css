@@ -313,13 +313,6 @@ _:-ms-fullscreen, :root .flex-wrap  {
     .btn-back {
         display: none;
     }
-    .card-indiv h2 {
-        padding-top: 35px!important;
-    }
-    .card-indiv p {
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
     .service-title {
         padding-top: 80px;
     }
