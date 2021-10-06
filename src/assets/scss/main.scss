@@ -1,6 +1,7 @@
 // @import "utils/libs";
 @import "utils/vars";
 // @import "utils/mixins";
+@import "utils/fonts";
 // @import "utils/fonts";
 // @import "utils/reset";
 
@@ -27,8 +28,8 @@
 @import "footer.css";
 
 // / pages
-@import "pages/direction.css";
-@import "pages/directions-page.css";
-@import "pages/service-page.css";
+@import "pages/direction.scss";
+@import "pages/directions-page.scss";
+@import "pages/service-page.scss";
 
-@import "pages/main-page.css";
+@import "pages/main-page.scss";

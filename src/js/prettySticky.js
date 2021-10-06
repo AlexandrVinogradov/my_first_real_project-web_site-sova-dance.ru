@@ -11,7 +11,7 @@ $(function() {
         	return scroll <= $(this).offset().top + $(this).height();
         });
         $(".nav a").removeClass("selected");
-        $(".nav a[href=#" + currentArea.attr("id") + "]").addClass("selected");
+        $('.nav a[href="#' + currentArea.attr("id") + '"]').addClass("selected");
 
         if ($(window).scrollTop() > 100) {
             $('nav').addClass("navScroll");
