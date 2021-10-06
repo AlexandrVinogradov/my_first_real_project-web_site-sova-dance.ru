@@ -5,6 +5,8 @@ const path = require("path");
 const fs = require("fs");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+var ImageminPlugin = require('imagemin-webpack-plugin').default
+const ImageminWebpWebpackPlugin= require("imagemin-webp-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 // const { VueLoaderPlugin } = require("vue-loader");
 
@@ -88,7 +90,7 @@ module.exports = {
       },
       {
         // images / icons
-        test: /\.(png|jpg|gif|svg)$/,
+        test: /\.(png|jpg|gif|svg|webp)$/,
         loader: "file-loader",
         options: {
           name: "[name].[ext]",
@@ -154,6 +156,24 @@ module.exports = {
       { from: `${PATHS.src}/${PATHS.assets}fonts`, to: `${PATHS.assets}fonts` },
       { from: `${PATHS.src}/static`, to: "" }
     ]),
+    new ImageminWebpWebpackPlugin([{
+      config: [{
+        test: /\.(jpe?g|png)/,
+        options: {
+          quality:  75
+        }
+      }],
+      overrideExtension: false,
+      detailedLogs: false,
+      silent: false,
+      strict: true
+    }]),
+    // new ImageminPlugin({ 
+    //   test: /\.(jpe?g|png|gif|svg)$/i,  
+    //   pngquant: {
+    //     quality: '13'
+    //   } 
+    // }),
 
     // Automatic creation any html pages (Don't forget to RERUN dev server)
     // see more: https://github.com/vedees/webpack-template/blob/master/README.md#create-another-html-files
