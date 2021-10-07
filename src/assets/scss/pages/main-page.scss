@@ -760,7 +760,7 @@ _:-ms-fullscreen, :root .wcm_button_ic {
         margin-bottom: 10px;
     }
         .gallery {
-            width: 267px;
+            width: 267px!important;
         }
         .section-gllery h2 {
             text-align: center;
@@ -773,10 +773,12 @@ _:-ms-fullscreen, :root .wcm_button_ic {
             padding-bottom: 60px;
         }
         .gallery__photo {
-            height: auto;
+            height: auto!important;
+            margin: 0 auto;
         }
         .gallery__photo-firstStrip {
             justify-content: space-between;
+            // justify-content: flex-start;
         }
         .gallery__photo-thirdStrip {
             justify-content: space-evenly;
@@ -820,30 +822,34 @@ _:-ms-fullscreen, :root .wcm_button_ic {
         padding-bottom: 26px;
     }
     .achievements p {
-        font-size: 8px;
+        font-size: 8px!important;
     }
     .achievements img {
-        height: 40px;
+        height: 40px!important;
     }
         .review-title h2 {
             font-size: 18px;
         }
         .section-review {
-            padding-top: 17px;
+            padding-top: 27px;
         }
         .section-review img {
             width: 50px;
             height: 50px;
         }
         .section-review p {
-            font-size: 10px;
+            font-size: 10px!important;
         }
         .review-title {
             padding-bottom: 30px;
         }
         .slide {
-            padding-bottom: 0px;
-            height: 210px;
+            padding-bottom: 0px!important;
+            height: 240px!important;
         }
+        .slick-next:before, .slick-prev:before {
+            display: none
+        }
+
 
 }
