@@ -126,6 +126,9 @@ a.bubbly-button:hover { /* приступы с кнопкой */
         transform: scale(1.1);
     }
 }
+.direction-card img {
+    max-width: 300px;
+}
 .direction-card h3 {
     text-align: center;
     padding: 15px 0 7px;
@@ -424,6 +427,14 @@ _:-ms-fullscreen, :root .flex-wrap, .hidden_tabl  {
     }
 }
 @media screen and (max-width: 576px) {
+
+    .direction-card {
+        margin-bottom: 30px;
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
     .container {
         width: 90%;    
     }
