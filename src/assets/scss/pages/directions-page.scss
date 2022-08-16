@@ -48,6 +48,12 @@ a {
     width: 1140px;
     margin: 0 auto;
 }
+.direction_page_container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
 .wow {
     visibility: hidden;
 }
@@ -79,6 +85,9 @@ a.bubbly-button:hover { /* приступы с кнопкой */
 .child-title {
     flex-basis: 100%;
 }
+.adult-title {
+    padding-top: 70px!important;
+}
 .Weekdays-tab img {
     /* width: 1100px; */
     max-width: 500px;
@@ -96,19 +105,26 @@ a.bubbly-button:hover { /* приступы с кнопкой */
 }
 .direction h2 {
     text-align: center;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 50px;
     font-size: 28px;
 }
 
 .direction-card {
-    background: white;
-    width: 220px;
+    border-radius: 6px;
+    overflow: auto;
+    background: rgb(255, 233, 182);
+    width: 100%;
+    max-width: 300px;
     flex-direction: column;
+    justify-content: space-between;
     margin-bottom: 20px;  
-}
-.direction-card img {
-    width: 220px;
-    height: 153px;
+    transition: 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 .direction-card h3 {
     text-align: center;
@@ -144,31 +160,19 @@ a.bubbly-button:hover { /* приступы с кнопкой */
 .direction-card a {
     text-align: center;
 }
-.direction-card a:hover {
-    color: rgb(78, 78, 78);
-    /* box-shadow: 0 0 10px rgba(0,0,0,0.4); */
-    /* background:#F88095; */
-    background: rgba(0,0,0,0.15);
-    transition: 0.9s
-}
-.direction-card--btn:hover {
-    border: solid 1px #5f5f5f;
-    transition: 0.9s
-}
 .direction-card--btn {
-    border: solid 1px #423d3d;
+    cursor: pointer;
+    border: none;
+    border-top: 2px solid rgb(225, 157, 0);
     padding: 10px;
     color: #423d3d;
+    background: transparent;
+    color: rgb(206, 144, 0);
+    font-size: 16px;
+    height: 50px;
+    padding-bottom: 15px;
 }
 
-/* .direction h3 {
-    text-align: center;
-    padding: 15px 0 15px;
-    font-size: 20px;
-    text-transform: none;
-    padding-top: 30px;
-    padding-bottom: 30px;
-} */
 .hidden_tabl {
     justify-content: space-evenly;
 }
@@ -424,9 +428,10 @@ _:-ms-fullscreen, :root .flex-wrap, .hidden_tabl  {
         width: 90%;    
     }
     .hidden_tabl a {
-        width: 120px;
+        width: 280px;
         font-size: 14px;
         padding: 10px;
+        margin-bottom: -20px;
     }
     .Weekdays-tab img {
         width: 300px;
