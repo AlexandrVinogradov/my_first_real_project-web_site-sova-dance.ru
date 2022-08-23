@@ -78,10 +78,15 @@ a.bubbly-button:hover {
 .direction-page  {
     padding-bottom: 30px;
 }
-.direction-page p {
+.direction-page p, .small-title {
     padding-left: 34px;
     color: #5e4017;
     font-weight: 600;
+    padding-bottom: 0px!important;
+}
+.direction-page .small-title {
+    text-align: left;
+    font-weight: 800;
 }
 .direction-page li {
     margin-left: 70px;
@@ -237,7 +242,7 @@ _:-ms-fullscreen, :root .flex-wrap  {
     .direction-page__content-title h3 {
         font-size: 14px;
     }
-    .direction-page p {
+    .direction-page p, .small-title {
         padding-left: 0px;
     }
     .direction-page__content-title p {
