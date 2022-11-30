@@ -1,0 +1,36 @@
+include ../utils/mixins
+block variables
+
+doctype html
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    title #{title}
+    meta(name="description", content=description)
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    //- script(
+    //-   src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"
+    //- ) 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    //- fonts?
+    //- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&amp;subset=cyrillic" rel="stylesheet">
+    //- <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700,900" rel="stylesheet">
+    //- <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+    //- Yandex.Metrika 
+    <meta name="yandex-verification" content="b8b4cecb388d5fa4" /> 
+    <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(54385684, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/54385684" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+
+
+    block head
+
+  body(class=pageClass)
+    .wrapper
+      include ../includes/modules/header
+      .content-wrapper
+        block content
+      include ../includes/modules/footer
+
+
+
+    block script

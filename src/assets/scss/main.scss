@@ -1,0 +1,35 @@
+// @import "utils/libs";
+@import "utils/vars";
+// @import "utils/mixins";
+@import "utils/fonts";
+// @import "utils/fonts";
+// @import "utils/reset";
+
+.index-page__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+}
+
+
+// Modules:
+@import "animate.css";
+
+@import "prettySticky.css";
+@import "header.css";
+
+@import "jquery.arcticmodal-0.3.css";
+@import "simple.css";
+@import "lightbox.min.css";
+@import "slick-theme.css";
+@import "slick.css";
+@import "style-btn.css";
+
+@import "footer.css";
+
+// / pages
+@import "pages/direction.scss";
+@import "pages/directions-page.scss";
+@import "pages/service-page.scss";
+
+@import "pages/main-page.scss";
