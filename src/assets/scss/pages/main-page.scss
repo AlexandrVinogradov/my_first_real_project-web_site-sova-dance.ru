@@ -104,7 +104,7 @@ a.bubbly-button:hover {
 }
 .aboutUs__first-block img {
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    max-width: 100%;
+    max-width: 550px;
     height: auto;
 }
 .aboutUs__first-block_content h2 {
@@ -120,6 +120,9 @@ a.bubbly-button:hover {
 .aboutUs__second-block {
     justify-content: space-evenly;
     align-items: center;
+}
+.fit {
+    object-fit: cover;  
 }
 .aboutUs__second-block img {
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -467,8 +470,10 @@ _:-ms-fullscreen, :root .wcm_button_ic {
     .contact-card {
         display: none;
     }
+    .aboutUs__first-block img {
+        max-width: 490px;
+    }
     .aboutUs__second-block img {
-
         margin-left: 15px;
     }
     .hide-on-1024 {
@@ -496,7 +501,8 @@ _:-ms-fullscreen, :root .wcm_button_ic {
     }
     /* Aboutus */
     .aboutUs__first-block img {
-        height: 300px;
+        max-width: 350px;
+        margin-right: 15px;
     }
     .aboutUs__first-block_content h2 {
         font-size: 18px;
@@ -614,11 +620,18 @@ _:-ms-fullscreen, :root .wcm_button_ic {
     }
     .aboutUs__first-block img {
         display: block;
-        width: 400px;
-        height: 405px;
+        max-width: 500px;
         margin: 0 auto;
         margin-bottom: 0px;
         text-align: center;
+    }
+    .aboutUs__second-block img {
+        display: block;
+        max-width: 500px;
+        margin: 0 auto;
+        margin-bottom: 0px;
+        text-align: center;
+        height: auto;
     }
     .aboutUs__first-block_content {
         text-align: center;
@@ -637,10 +650,17 @@ _:-ms-fullscreen, :root .wcm_button_ic {
         margin-bottom: 10px;
     }
     .aboutUs__second-block {
-        display: none;
+        flex-direction: column;
+    }
+    .aboutUs__second-block_content {
+        padding-bottom: 60px;
+        padding-top: 20px;
+        order: 1;
+        text-align: center;
     }
     /* Galley */
     .section-gllery {
+        display: none;
         padding-bottom: 70px;
         padding-top: 55px;
     }
@@ -740,9 +760,11 @@ _:-ms-fullscreen, :root .wcm_button_ic {
         justify-content: center;
     }
     .aboutUs__first-block img {
-        height: 292px;
-        width: 292px;
+        width: 320px;
         margin-bottom: 20px;
+    }
+    .aboutUs__second-block img {
+        width: 320px;
     }
     .aboutUs__first-block_content {
         text-align: center;
