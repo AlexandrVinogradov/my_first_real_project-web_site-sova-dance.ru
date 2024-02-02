@@ -258,3 +258,17 @@ _:-ms-fullscreen, :root .flex-wrap  {
     }
 }
 
+
+.direction-page__content-title .infoItem {
+    display: flex;
+    margin-left: 0;
+}
+.direction-page__content-title .infoItem p {
+    margin-bottom: 20px;
+}
+.direction-page__content-title .infoItem p:first-child {
+    min-width: 120px;
+    font-weight: 900;
+    text-align: end;
+    padding-right: 10px;
+}
