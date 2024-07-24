@@ -33,7 +33,7 @@ a {
 }
 .header {
     padding-top: 40px;
-    padding-bottom: 130px;
+    padding-bottom: 40px;
     background: rgba(255,221,0,1);
     background: -moz-linear-gradient(left, rgba(255,221,0,1) 0%, rgba(255,133,10,1) 100%);
     background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,221,0,1)), color-stop(100%, rgba(255,133,10,1)));
@@ -60,29 +60,49 @@ a {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    margin-top: 100px;
+    margin-top: 80px;
+}
+.headContent__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .headContent__title h1 {
-    font-family: $secondFont;
-    // font-family: 'Raleway', sans-serif;
-    text-shadow: 1px 1px 2px black, 0 0 1em #ff560b;
-    font-size: 55px;
-    line-height: 97%; /* местрочный интервал*/
+    // font-family: $secondFont;
+    // // font-family: 'Raleway', sans-serif;
+    // text-shadow: 1px 1px 2px black, 0 0 1em #ff560b;
+    // font-size: 55px;
+    // line-height: 97%; /* местрочный интервал*/
 }
 .headContent__border {
     width: 200px;
-    margin-top: 21px;
     border-top: 2px solid black;
     margin-left: auto;  /*черта по центру*/
     margin-right: auto; /*черта по центру*/
-    margin-top: 20px;
 }
-.headContent__title p {
+.headContent__new-address {
+    // margin-top: 10px!important;
+    margin-top: 30px;
+     & > a {
+        color: #5c5c5c;
+
+        &:hover {
+            color: #ff1074;
+            transition: all 0.2s linear;
+        }
+    }
+}
+.headContent__title p, h1 {
+    max-width: 400px;
+    text-align: center;
     font-weight: 900;
     font-size: 20px;
-    margin-top: 20px;
     margin-bottom: 30px;
     text-shadow: 0 3px 19px rgba(0,0,0,0.16);
+}
+
+.picturesSova {
+    width: 650px;
 }
 a.bubbly-button:hover { 
     color: white;
@@ -488,7 +508,7 @@ _:-ms-fullscreen, :root .wcm_button_ic {
         display: none!important;
     }
     .headContent__title h1 {
-        font-size: 36px; 
+        // font-size: 36px; 
     }
     .headContent__title p {
         font-size: 18px;
@@ -601,7 +621,10 @@ _:-ms-fullscreen, :root .wcm_button_ic {
     }
 
     .headContent__title h1 {
-        font-size: 28px; 
+        // font-size: 28px; 
+    }
+    .headContent {
+        margin-top: 140px;
     }
     .headContent__title p {
         font-size: 14px;
@@ -723,21 +746,26 @@ _:-ms-fullscreen, :root .wcm_button_ic {
     }
         .headContent {
             flex-direction: column-reverse;
-            margin-top: 80px;
+            margin-top: 80px!important;
         }
         .headContent__title h1 {
             text-align: center;
+        }
+        .headContent__title p, h1 {
+            margin-bottom: 15px;
+            margin-top: 15px;
         }
         .headContent__btn {
             justify-content: space-evenly;
         }
         .header {
-            padding-bottom: 55px;
+            padding-bottom: 40px;
         }
         .picturesSova {
             width: 270px;
         }
         .headContent__title h1 {
+            margin-bottom: 15px;
             font-size: 26px;
         }
         .headContent__title p {

@@ -51,6 +51,9 @@
 }
 .contacts-inf__widgets {
     margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .contacts-inf__link {
     padding-bottom: 40px;

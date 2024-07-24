@@ -1,9 +1,9 @@
 extends ../layout/main
 
 block variables
-  - var title = 'Школа танцев в Тушино SOVA DANCE';
-  - var description = 'Школа танцев в Тушино Sova Dance приглашает на занятия детей и взрослых. Танцевальная студия находится не далеко от метро Сходненская Планерная и Тушинсквя.';
-  - var pageClass = 'main-page';
+  - var title = "Школа танцев в Тушино SOVA DANCE";
+  - var description = "Школа танцев в Тушино Sova Dance приглашает на занятия детей и взрослых. Танцевальная студия находится не далеко от метро Сходненская Планерная и Тушинсквя.";
+  - var pageClass = "main-page";
 
 block head
 
@@ -12,15 +12,18 @@ block content
     <div class="container">
       <div class="headContent d-flex">
         <div class="headContent__title">
-          <h1 class="wow fadeInDown">
-            | Школа танцев</br>
-            | для новичков</br>
-            | sova dance</br>
+          //- <h1 class="wow fadeInDown">
+          //-   | Школа танцев</br>
+          //-   | для новичков</br>
+          //-   | sova dance</br>
+          //- </h1>
+          <h1>
+            | Запишись на пробное занятие и получи скидку до 40%!
           </h1>
           <div class="headContent__border">
           </div>
-          <p>
-            | Запишись на пробное занятие и получи скидку до 40%!
+          <p class="headContent__new-address">
+            | Внимание, у нас новый <a href="#section-contacts">адрес!</a>
           </p>
           <div class="headContent__btn d-flex">
             <a href="https://mssg.me/sova_dance" class="bubbly-button main-btn contact-btn d-flex wow heartBeat" data-wow-delay="2s">
@@ -28,7 +31,7 @@ block content
             </a>
           </div>
         </div>
-        <img src="assets/img/mainPage/logoSova.webp" alt="Логотип школы танцев sovadance" class="picturesSova wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.5s">
+        <img src="assets/img/mainPage/test5.webp" alt="Логотип школы танцев sovadance" class="picturesSova wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.5s">
       </div>
     </div>
   </header>
@@ -82,9 +85,9 @@ block content
             </h3>
             <p class="wow fadeInRight" data-wow-delay="0.6s">
               | Различные направления</br>
-              | Опытные педагоги, просторный</br>
-              | Светлый зал, уютная</br>
-              | Домашняя атмосфера</br>
+              | Опытные педагоги</br>
+              | Просторный, светлый зал</br>
+              | Уютная, домашняя атмосфера</br>
               | Удобная система абонементов
             </p>
           </div>
@@ -218,11 +221,13 @@ block content
               <img src="assets/img/mainPage/trainers/trainer3.webp" alt="Преподаватель танцев sova dance Хэлен" class="trainer3">
               <div class="trainer-card__shadow3">
                 <h3>
-                  | Хэлен</br>
+                  | Мария</br>
                 </h3>
                 <p>
                   | Направления: </br></br></br>
-                  a.trainers-link(href="high-heels.html") HiGH HEELS</a></br></br>
+                  a.trainers-link(href="baby-dance.html") BABY DANCE</a></br></br>
+                  a.trainers-link(href="dance-mix.html") DANCE MIX</a></br></br>
+                  a.trainers-link(href="stretching.html") STRETCHING</a></br></br>
                 </p>
               </div>
             </div>
