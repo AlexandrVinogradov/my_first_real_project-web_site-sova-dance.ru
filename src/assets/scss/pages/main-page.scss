@@ -748,9 +748,6 @@ _:-ms-fullscreen, :root .wcm_button_ic {
             flex-direction: column-reverse;
             margin-top: 80px!important;
         }
-        .headContent__title h1 {
-            text-align: center;
-        }
         .headContent__title p, h1 {
             margin-bottom: 15px;
             margin-top: 15px;
@@ -766,7 +763,8 @@ _:-ms-fullscreen, :root .wcm_button_ic {
         }
         .headContent__title h1 {
             margin-bottom: 15px;
-            font-size: 26px;
+            text-align: center;
+            font-size: 18px;
         }
         .headContent__title p {
             font-size: 14px;
@@ -900,6 +898,8 @@ _:-ms-fullscreen, :root .wcm_button_ic {
         .slick-next:before, .slick-prev:before {
             display: none
         }
-
+    .forDesktop {
+        display: none;
+    }
 
 }
